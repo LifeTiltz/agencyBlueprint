@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* These are the sizes and 
+colors of the text */
+h1,
+h3,
+h4 {
+  color: white;
+  padding: 0 0 5px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding: 5px 0 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  padding: 0 0 5px;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+  color: #6b6b6b;
+  font-weight: 400;
+  margin: 15px;
+}
+
+p {
+  padding: 7px;
+}
+
+.card p {
+  color: #b0b0b0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.card2 p {
+  color: #b0b0b0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+body {
+  background-color: rgb(58, 58, 58);
+  /* background-image: url("./Assets/Dubai_night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; */
+}
+
+#first_section {
+  height: 750px;
+  max-width: 1152px;
+  background-color: rgb(249, 25, 25);
+  background-image: url("./Assets/Dubai_night.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#logo {
+  width: 48px;
+  cursor: pointer;
+}
+
+#icon1,
+#icon2,
+#icon3 {
+  width: 96px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0 80px;
+  gap: 80px;
+}
+
+.cards {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+  padding: 0 75px;
+}
+
+.cards2 {
+  height: auto;
+  width: auto;
+  display: flex;
+
+  gap: 32px;
+  padding: 0 25px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.763);
+  border-radius: 24px;
+  padding: 48px 48px 64px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.card2 {
+  background: rgba(150, 150, 150, 0.763);
+  border-radius: 24px;
+  padding: 62px 48px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.card h4 {
+  padding: 16px 0px;
+}
+
+.card2 h4 {
+  padding: 16px 0px;
+}
+
+button {
+  margin-top: 40px;
+  border-radius: 100px;
+  color: #033239;
+  border: none;
+  cursor: pointer;
+
+  height: 36px;
+  width: 138px;
+  font-size: 13px;
+  font-weight: 700;
+  transition-duration: 0.6s;
+}
+
+button:hover {
+  background-color: white;
+  font-size: 14px;
+
+  /* 👇 Having some giggles 👇 */
+
+  /* width: 500px;
+    height: 350px;
+    color: blue;
+    background-color: rgb(217, 22, 54);
+    border: #f6336d solid 10px;
+    font-size: 55px; */
+}
+
+#big_button {
+  margin: 40px 0 90px;
+  border-radius: 100px;
+  color: #60b4f4;
+  background-color: rgb(22, 22, 22);
+  border: none;
+  cursor: pointer;
+
+  height: 100px;
+  width: 60%;
+  font-size: 35px;
+  font-weight: 700;
+  transition-duration: 0.6s;
+}
+
+#big_button:hover {
+  background-color: white;
+  font-size: 45px;
+
+  /* 👇 Having some giggles 👇 */
+
+  /* width: 500px;
+    height: 350px;
+    color: blue;
+    background-color: rgb(217, 22, 54);
+    border: #f6336d solid 10px;
+    font-size: 55px; */
+}
+
+.big_CTA {
+  padding: 42px 0;
+}
+
+footer {
+  margin: 80px 0 64px;
+}
+
+footer a {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.firstRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.redDot {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #de0a4a;
+  margin: 0 16px;
+}
+
+/* or (max-height: 975px)
+    i am not sure i want this. maybe smaller */
+@media (max-width: 1100) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h3,
+  h4 {
+    font-size: 22px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card2 p {
+    font-size: 14px;
+  }
+
+  body {
+    background-size: 100% auto;
+  }
+
+  .header {
+    padding: 48px 25px;
+    gap: 32px;
+  }
+
+  .container {
+    width: 93%;
+  }
+
+  #icon1,
+  #icon2,
+  #icon3 {
+    width: 64px;
+  }
+
+  .card {
+    background: rgba(47, 47, 47, 0.48);
+    flex-basis: auto;
+    padding: 32px 24px;
+  }
+
+  .card h4 {
+    padding: 8px 0px 16px;
+  }
+
+  .card2 {
+    background: rgba(47, 47, 47, 0.48);
+    flex-basis: auto;
+    padding: 32px 24px;
+  }
+
+  .card2 h4 {
+    padding: 8px 0px 16px;
+  }
+
+  button {
+    margin-top: 32px;
+  }
+
+  .firstRow {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .redDot {
+    display: none;
+  }
+}
+
+/* This is to get lightmode  */
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-image: none;
+    background-color: white;
+  }
+
+  h1 {
+    color: #1d1d1d;
+  }
+
+  footer a {
+    color: #1d1d1d;
+  }
+
+  .card {
+    padding-top: 160px;
+    border-radius: 0px;
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .photo {
+    background-image: linear-gradient(rgb(22, 22, 22, 0.2) 50%, #161616 100%),
+      url("./Assets/video-light.png");
+    background-position: 50% 80%;
+  }
+
+  .drone {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.2) 50%, #161616 100%),
+      url("./Assets/drone-light.png");
+    background-position: 50% 60%;
+  }
+
+  .production {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.2) 50%, #161616 100%),
+      url("./Assets/video-edit-light.png");
+    background-position: 50% 25%;
+  }
+}
