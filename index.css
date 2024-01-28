@@ -59,21 +59,28 @@ p {
 }
 
 body {
-  background-color: rgb(58, 58, 58);
-  /* background-image: url("./Assets/Dubai_night.jpg");
+  background-color: #333333;
+}
+
+header {
+  padding: 100px 0 0;
+}
+
+.background {
+  background-image: url("./Assets/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; */
+  background-position: top center;
+  z-index: -1;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  position: absolute;
 }
 
 #first_section {
   height: 750px;
-  max-width: 1152px;
-  background-color: rgb(249, 25, 25);
-  background-image: url("./Assets/Dubai_night.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  max-width: 1280px;
 
   display: flex;
   flex-direction: column;
@@ -91,12 +98,9 @@ body {
   width: 96px;
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120px 0 80px;
-  gap: 80px;
+.iframe {
+  width: 360px;
+  height: 240px;
 }
 
 .cards {
@@ -115,14 +119,10 @@ body {
   display: flex;
 
   gap: 32px;
-  padding: 0 25px;
+  /* padding: 0 25px; */
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.763);
-  border-radius: 24px;
-  padding: 48px 48px 64px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,15 +179,15 @@ button:hover {
 }
 
 #big_button {
-  margin: 40px 0 90px;
+  margin: 40px 0 30px;
   border-radius: 100px;
-  color: #60b4f4;
-  background-color: rgb(22, 22, 22);
+  color: #6d6d6d;
+  background-color: rgb(244, 244, 244);
   border: none;
   cursor: pointer;
 
   height: 100px;
-  width: 60%;
+  width: 50%;
   font-size: 35px;
   font-weight: 700;
   transition-duration: 0.6s;
@@ -195,16 +195,7 @@ button:hover {
 
 #big_button:hover {
   background-color: white;
-  font-size: 45px;
-
-  /* 👇 Having some giggles 👇 */
-
-  /* width: 500px;
-    height: 350px;
-    color: blue;
-    background-color: rgb(217, 22, 54);
-    border: #f6336d solid 10px;
-    font-size: 55px; */
+  font-size: 42px;
 }
 
 .big_CTA {
@@ -239,7 +230,7 @@ footer a {
 
 /* or (max-height: 975px)
     i am not sure i want this. maybe smaller */
-@media (max-width: 1100) {
+@media (max-width: 840px) {
   h1 {
     font-size: 32px;
   }
@@ -257,10 +248,6 @@ footer a {
     font-size: 14px;
   }
 
-  body {
-    background-size: 100% auto;
-  }
-
   .header {
     padding: 48px 25px;
     gap: 32px;
@@ -276,8 +263,11 @@ footer a {
     width: 64px;
   }
 
+  .cards2 {
+    flex-direction: column;
+  }
+
   .card {
-    background: rgba(47, 47, 47, 0.48);
     flex-basis: auto;
     padding: 32px 24px;
   }
@@ -287,7 +277,7 @@ footer a {
   }
 
   .card2 {
-    background: rgba(47, 47, 47, 0.48);
+    background: rgba(199, 199, 199, 0.48);
     flex-basis: auto;
     padding: 32px 24px;
   }
@@ -296,23 +286,27 @@ footer a {
     padding: 8px 0px 16px;
   }
 
-  button {
-    margin-top: 32px;
+  #big_button {
+    font-size: 22px;
+  }
+
+  #big_button:hover {
+    font-size: 30px;
   }
 
   .firstRow {
     flex-direction: column;
     gap: 16px;
   }
-
-  .redDot {
-    display: none;
-  }
 }
 
-/* This is to get lightmode  */
+/* Update Light mode
+  Get a new picture and photoshop that one too
+  match assets to white grayblack color scheme
+  find new artwork 
+*/
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   body {
     background-image: none;
     background-color: white;
@@ -352,4 +346,4 @@ footer a {
       url("./Assets/video-edit-light.png");
     background-position: 50% 25%;
   }
-}
+} */
